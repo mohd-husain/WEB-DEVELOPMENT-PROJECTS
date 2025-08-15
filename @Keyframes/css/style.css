@@ -1,0 +1,55 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.main{
+	width: 150px;
+	margin: auto;
+	background-color: black;
+	color: white;
+	margin-top: 15px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 20px;
+	animation: colorchange2;
+	animation-duration: 10s;
+	animation-iteration-count: 2;
+	animation-delay: 1s;
+	animation-direction: reverse;
+	animation-direction: alternate;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes colorchange{
+	from {
+		background-color: black;
+		font-size: 20px;
+	}
+	to {
+		background-color: red;
+		font-size: 22px;
+	}
+}
+
+@keyframes colorchange2{
+	0% {
+		background-color: red;
+	}  
+	20% {
+		background-color: green;
+	}  
+	40% {
+		background-color: purple;
+	}  
+	60% {
+		background-color: black;
+	}
+	80% {
+		background-color: pink;
+	}  
+	100% {
+		background-color: blue;
+	}
+}
