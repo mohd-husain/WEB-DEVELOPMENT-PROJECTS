@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // let showData=()=> "hello";
+    // let s = showData();
+    // console.log(s)
+
+    let sumData = (n, m) => n + m; //Arrow Function wihtout {} me return automatic aata hai likhna mandatory nahi hai
+    let n = sumData(20, 50);
+    console.log(n);
+
+    let mulData = (n, m) => { //Agar Arrow Function Ke Andar {} Liya Hai To Return dena mandatory hai
+        return n * m;
+    }
+
+    let m = mulData(10, 20)
+    console.log(m)
+
+    let obj ={
+        name: "Mohd Hussain",
+        cName: "Ws",
+        cInfo: function(){
+            console.log(this) //this not working in arrow function
+        }
+    }
+
+    obj.cInfo();
+</script>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Date Diff. Calculator</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            body {
+                background-color: aqua;
+            }
+            
+            .main {
+                width: 300px;
+                margin: auto;
+                background-color: white;
+                padding: 20px;
+            }
+
+            .main label {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .main input {
+                width: 100%;
+                height: 30px;
+            }
+
+            .main button {
+                background-color: blue;
+                width: 100%;
+                padding: 10px 0px;
+                color: white;
+                border: none;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h3>Date Difference Calculator</h3>
+
+            <div>
+                <label>From Date</label>
+                <input type="datetime-local" id="fromDate">
+            </div>
+            <div>
+                <label>To Date</label>
+                <input type="datetime-local" id="toDate">
+            </div>
+            <button>Calculate</button>
+        </div>
+    </body>
+    <script>
+        let btn=document.querySelector('button');
+        let fromDate=document.querySelector('#fromDate');
+        let toDate=document.querySelector('#toDate');
+
+        btn.addEventListener('click', ()=>{
+            let fromDateObject = new Date(fromDate.value);
+            let toDateObject = new Date(toDate.value);
+            let fromDateObjectMil = fromDateObject.getTime();
+            let toDateObjectMil = toDateObject.getTime();
+
+            let difMilSecConvertIntoSec = (toDateObjectMil - fromDateObjectMil)/1000;
+            console.log(difMilSecConvertIntoSec)
+
+            let oneMin = 60;
+            let oneHour = oneMin*60;
+            let oneDaySec = oneHour*24;
+
+            console.log(oneMin, oneHour, oneDaySec);
+
+            let finalDays=Math.floor (difMilSecConvertIntoSec/oneDaySec)
+
+            let remSecUtliDays = difMilSecConvertIntoSec % oneDaySec;
+            let finalHours =Math.floor(remSecUtliDays / oneHour);
+        })
+    </script>
+</html>

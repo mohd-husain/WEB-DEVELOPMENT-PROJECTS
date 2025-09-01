@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smallest Number</title>
+    </head>
+    <body>
+        <button onclick="smallestValue()">Smallest</button>
+
+        <script>
+
+            let numbers = [25, 99, 77, 66, 44, 88, 6, 99, 66, 77, 66, 55];
+
+            function smallestValue(){
+                var output = numbers[0];
+
+                for(value of numbers){
+                    if(value < output){
+                        output = value;
+                    }
+                }
+                console.log(output)
+            }
+
+        </script>
+    </body>
+</html>

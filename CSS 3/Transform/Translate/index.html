@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Translate Property</title>
+        <style>
+            .main{
+                width: 300px;
+                height: 300px;
+                transition: 0.5s;
+                background-color: red;
+                overflow: hidden;
+            }
+            /*.main:hover{
+                transform: translate(300px, 300px);
+                transform: translateX(300px);
+                transform: translateY(300px);
+            }*/
+            .img1{
+                width: 300px;
+                height: 300px;
+                transition: 0.5s;
+            }
+            .img2{
+                width: 300px;
+                height: 300px;
+                transition: 0.5s;
+            }
+            .main img{
+                display: block;
+            }
+            .main:hover .img1{
+                transform: translateY(300px);
+            }
+            .main:hover .img2{
+                transform: translateY(-300px);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <img src="https://img.freepik.com/free-photo/bright-neon-colors-shining-wild-chameleon_23-2151682797.jpg?semt=ais_hybrid&w=740" class="img1">
+            <img src="https://images.panda.org/assets/images/pages/welcome/orangutan_1600x1000_279157.jpg" class="img2">
+        </div>
+    </body>
+</html>

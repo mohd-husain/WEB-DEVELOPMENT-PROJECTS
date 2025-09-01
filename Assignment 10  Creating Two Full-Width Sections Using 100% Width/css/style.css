@@ -1,0 +1,131 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.header{
+	width: 100%;
+	background-image: url("../images/spotlight-bg.webp");
+	background-position: bottom;
+	background-size: cover;
+}
+.number{
+	text-align: center;
+}
+.number h1{
+	font-size: 46px;
+	color: white;
+	padding-top: 70px;
+	background-image: url(../images/spotlight-heading-bg.svg);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	display: inline-flex;
+}
+.number p{
+	font-size: 20px;
+	color: white;
+	padding-top: 20px;
+}
+.data{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.col{
+	width: 22%;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 70px;
+	border-right: 1px solid #9CB2C5;
+}
+.col h2:hover{
+	color: #FFD700;
+}
+.col h2{
+	font-size: 52px;
+}
+.col p{
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	color: #9CB2C5;
+}
+.noborder{
+	border: none;
+}
+.hero_section{
+	width: 100%;
+	padding: 100px 100px;
+	background-color: #F8F9FD;
+}
+.left{
+	width: 100%;
+}
+.content h2{
+	font-size: 35px;
+	padding-bottom: 50px;
+}
+.content p{
+	color: #43505B;
+	padding-bottom: 40px;
+}
+.box h3{
+	padding-bottom: 15px;
+}
+.box p{
+	color: #43505B;
+	padding-bottom: 15px;
+}
+.box{
+	border: 1px solid lightgrey;
+	border-radius: 10px;
+	padding: 25px 15px;
+	margin: 15px 0px;
+}
+.box a{
+	text-decoration: none;
+	color: #2699FB;
+}
+.box:hover{
+	border: 1px solid #2699FB;
+}
+.btn_view_all{
+	font-size: 17px;
+	color: white;
+	background-color: #2699FB;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+	transition: 0.5s;
+}
+.btn_view_all:hover{
+	background-color: white;
+	color: #43505B;
+	border: 1px solid lightgrey;
+}
+.hero_section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right{
+	width: 100%;
+	padding: 0px 50px;
+}
+.image-section img{
+	width: 100%;
+	padding: 80px 30px;
+}
+.image-section{
+	background-image: url("../images/iq-dot-bg.webp");
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+.image-section img{
+	background-image: url("../images/iq-circle.webp");
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Skew Property</title>
+	<style>
+		.main{
+			width: 300px;
+			height: 300px;
+			background-color: red ;
+			transition: 0.5s;
+		}
+		.main:hover{
+			transform: skew(10deg);
+			transform: skew(-10deg);
+			transform: skewX(10deg);
+			transform: skewY(10deg);
+		}
+		button{
+			padding: 12px 25px;
+			background-color: transparent;
+			border: none;
+			margin: 30px;
+			transition: 0.5s;
+			cursor: pointer;
+			position: relative;
+		}
+		button::after {
+			content: "";
+			background-color: lightblue;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			z-index: -1;
+			transition: 0.5s;
+		}
+		button:hover:after{
+			transform: skew(-20deg);
+		}
+
+	</style>	
+</head>
+<body>
+	<div class="main"></div>
+	<button>Skew Forward</button>
+</body>
+</html>

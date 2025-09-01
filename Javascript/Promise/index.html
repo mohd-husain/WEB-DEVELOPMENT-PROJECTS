@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises in Javascript</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    new Promise((accept, reject) => {
+        const data = fetch('https://dummyjson.com/products/categories');
+        accept(data);
+        // reject(data);
+    })
+        .then((result) => {                              //accept .then me jaata hai
+
+            new Promise((complete, incomplete) => {
+                complete(result.json());
+            })
+                .then((output) => {
+                    console.log(output);
+                    console.log('Promise Complete')
+                })
+                .catch(() => {
+                    console.log('Promise Incomplete')
+                })
+        })
+        .catch(() => {                             //reject .catch me jaata hai
+            console.log('Promise Incomplete')
+        })
+
+
+        const data = () => {
+
+        }
+
+</script>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+    <div class="row" id="row">
+
+        <!-- <img src="images/1.jpg" id="image1" width="400px" onmousedown="imageChange(1)" onmouseup="imageChange(2)"> -->
+
+          <!-- <img src="images/1.jpg" id="image1" width="400px" onmousemove="mouseMove()"> -->
+
+          <img src="images/1.jpg" id="image1" width="400px" onmousewheel="mouseMove()">
+
+        <img src="images/2.webp" id="image2" width="400px" onmouseenter="imageChange(1)" onmouseleave="imageChange(2)">
+
+        <!-- <input type="text" id="name" value="Welcome"> -->
+
+        <div class="content">
+
+            <input type="text" onkeyup="copyCat(this)"> 
+
+            <div class="output" id="output"></div>
+
+            <!-- <input type="text" value="Welcome" onchange="getValue (this)"> -->
+
+            <!-- <input type="text" value="Welcome" onfocus="getValue (this)"> -->
+
+            <input type="text" value="Welcome" onblur="getValue (this)">
+
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+</html>

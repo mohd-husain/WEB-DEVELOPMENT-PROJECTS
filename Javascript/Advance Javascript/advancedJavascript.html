@@ -1,0 +1,61 @@
+
+1. Destructuring in Function Parameter Lists
+- Destructuring allows you to unpack values from arrays or properties from objects into distinct variables. In function parameter lists, destructuring can be used to directly extract values from the arguments passed to the function.
+
+Example with Objects:
+
+const user = { name: "Alice", age: 25, job: "Developer" };
+displayUser(user); 
+
+
+function displayUser({ name, age }) {
+  console.log(`Name: ${name}, Age: ${age}`); // Output: Name: Alice, Age: 25
+}
+
+
+Example with Arrays:
+
+const numbers = [3, 7];
+console.log(sum(numbers)); // Output: 10
+
+
+function sum([a, b]) {
+  return a + b;
+}
+
+
+
+
+2. The Spread Operator
+The spread operator (...) allows an iterable (like an array or object) to be expanded in places where multiple elements or properties are expected.
+
+var a=[...'jodhpur'];
+- ['j', 'o', 'd', 'h', 'p', 'u', 'r']
+
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5];
+console.log(arr2); // Output: [1, 2, 3, 4, 5]
+
+
+
+
+3. Differentiating Between Deep and Shallow Copies in JavaScript
+
+Shallow Copy: A shallow copy duplicates the top-level properties, but nested objects or arrays remain linked to the original reference.
+
+Example of Shallow Copy:
+const original = { a: 1, b: { c: 2 } };
+const copy = { ...original };
+copy.b.c = 42;
+
+console.log(original.b.c); // Output: 42 (both the copy and the original share the same reference for `b`)
+
+Deep Copy: A deep copy duplicates all levels of nested objects, ensuring no references to the original remain.
+
+Example of Deep Copy: You can achieve a deep copy using JSON.parse(JSON.stringify(obj)) (for simple objects) or by using libraries like Lodash.
+
+const original = { a: 1, b: { c: 2 } };
+const deepCopy = JSON.parse(JSON.stringify(original));
+deepCopy.b.c = 42;
+
+console.log(original.b.c); // Output: 2 (the original remains unaffected)

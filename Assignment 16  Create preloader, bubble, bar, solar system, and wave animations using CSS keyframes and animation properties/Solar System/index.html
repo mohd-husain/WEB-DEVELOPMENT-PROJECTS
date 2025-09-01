@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        @keyframes objectMove {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes subplanetMove{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+        body {
+            background-color: #080E24;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .sun {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #FFCC33;
+            box-shadow: 0px 0px 30px 1px #FFCC33;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .orbit1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #394057;
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            animation: objectMove;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .planet1 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: skyblue;
+            position: absolute;
+            top: 20px;
+        }
+
+        .orbit2 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #394057;
+            position: absolute;
+            top: calc(50% - 75px);
+            left: calc(50% - 75px);
+            animation: objectMove;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .planet2 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: orange;
+            position: absolute;
+            bottom: 40px;
+        }
+
+        .orbit3 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #394057;
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            animation: objectMove;
+            animation-duration: 9s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .planet3 {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #047ff3;
+            position: relative;
+            bottom: -50px;
+            animation: subplanetMove;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .subplanet3{
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: -10;
+            left: 50%;
+            transform: translate(10px, 0);
+        }
+        .orbit4 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 2px solid #394057;
+            position: absolute;
+            top: calc(50% - 125px);
+            left: calc(50% - 125px);
+            animation: objectMove;
+            animation-duration: 12s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .planet4 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #a14005;
+            position: absolute;
+            bottom: 80px;
+        }
+        .orbit5 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 2px solid #394057;
+            position: absolute;
+            top: calc(50% - 150px);
+            left: calc(50% - 150px);
+            animation: objectMove;
+            animation-duration: 16s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .planet5 {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #d8a56a;
+            position: absolute;
+            bottom: 100px;
+        }
+        .orbit6 {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 2px solid #394057;
+            position: absolute;
+            top: calc(50% - 175px);
+            left: calc(50% - 175px);
+            animation: objectMove;
+            animation-duration: 22s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .planet6 {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: #cfc7a1;
+            position: absolute;
+            right: 120px;
+        }
+        .subplanet2{
+            width: 24px;
+            height: 5px;
+            border: 2px solid #5b4c34;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: -7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="orbit1">
+        <div class="planet1"></div>
+    </div>
+    <div class="orbit2">
+        <div class="planet2"></div>
+    </div>
+    <div class="orbit3">
+        <div class="planet3">
+            <div class="subplanet3"></div>
+        </div>
+    </div>
+    <div class="orbit4">
+        <div class="planet4"></div>
+    </div>
+    <div class="orbit5">
+        <div class="planet5"></div>
+    </div>
+    <div class="orbit6">
+        <div class="planet6">
+            <div class="subplanet2"></div>
+        </div>
+    </div>
+</body>
+</html>

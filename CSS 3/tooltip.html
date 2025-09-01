@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Tooltip Using After & Before</title>
+		<style>
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			.main{
+				width: 400px;
+				height: auto;
+				margin: 50px auto;
+				font-size: 30px;
+				text-align: center;
+				padding: 10px 15px;
+				border: 0.5px solid red;
+				background-color: cyan;
+				position: relative;
+			}
+			.main::before{
+				content: '';
+				display: inline-block;
+				border-width: 20px 20px 20px 20px;
+				border-style: solid;
+				border-color: red transparent transparent transparent;
+				position: absolute;
+				top: 100%;
+				left: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main">
+			Welcome to WsCube Tech
+		</div>
+	</body>
+</html>

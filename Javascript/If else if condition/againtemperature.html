@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temperature Convertor</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var from = prompt('Enter From Value Here:- Kelvin, Fahrenheit, Celsius');
+        var to = prompt('Enter to Value Here:- Kelvin, Fahrenheit, Celsius');
+        var number =parseInt(prompt());
+        if(from.toLowerCase() == 'kelvin' && to.toLowerCase() == 'fahrenheit'){
+            var formula = (number-273.15) * 9/5 + 32;
+            document.write(formula)
+        } else if (from.toLowerCase() == 'celsius' && to.toLowerCase() == 'fahrenheit'){
+            var formula = (number*9/5) +32;
+            document.write(formula)
+        } else {
+            document.write('Please Enter Valid Details')
+        }
+    </script>
+</html>

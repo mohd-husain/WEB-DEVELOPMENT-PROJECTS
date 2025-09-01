@@ -1,0 +1,569 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: "Inter", sans-serif;
+}
+
+header{
+	max-width: 1170px;
+	margin: auto;
+	padding: 15px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.whatsapp_btn {
+	padding: 10px 18px;
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	leading-trim: Cap height;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-transform: capitalize;
+	background-color: white;
+	border: 1px solid #27AE60;
+	border-radius: 8px;
+	color: rgba(39, 174, 96, 1);
+	margin-right: 10px;
+}
+
+.call_btn {
+	padding: 10px 18px;
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	leading-trim: Cap height;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-transform: capitalize;
+	color: white;
+	border: none;
+	background: linear-gradient(93.77deg, #0ACEFE -6.36%, #2699FB 50.16%);
+	border-radius: 8px;
+}
+
+.banner_1 {
+	max-width: 1170px;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+	align-items: center;
+}
+
+.banner_1left {
+	flex-basis: 50%;
+}
+.banner_1left h2{
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 52px;
+	line-height: 68px;
+	background-image: url(../images/2.svg);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	display: inline;
+}
+
+.banner_1left span{
+	position: relative;
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 52px;
+	line-height: 68px;
+	letter-spacing: 0%;
+	background: linear-gradient(93.77deg, #0ACEFE -6.36%, #2699FB 50.16%);
+	-webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+}
+
+.banner_1left p{
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 35px;
+	letter-spacing: 0%;
+	padding-top: 15px;
+}
+
+.tick {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 33px;
+	letter-spacing: 0%;
+	padding-top: 15px;
+}
+
+.book_demo_btn { 
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0%;
+	color: white;
+	padding: 16px 48px;
+	background: linear-gradient(93.77deg, #0ACEFE -6.36%, #2699FB 50.16%);
+	border: none;
+	border-radius: 8px;
+	margin-top: 30px;
+}
+
+.download_btn {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0%;
+	text-align: center;
+	padding: 16px 28px;
+	border-radius: 8px;
+	border: 1px solid rgba(208, 213, 221, 1);
+	background: white;
+	margin-left: 15px;
+}
+
+.banner_1right {
+	flex-basis: 50%;
+}
+
+.form_background {
+	width: 550px;
+	height: 550px;
+	border-radius: 50%;
+	background-color: rgba(233, 245, 255, 1);
+	position: relative;
+}
+.form_inner {
+	width: 70%;
+	height: 90%;
+	position: absolute;
+	background-color: white;
+	top: 25px;
+	left: 75px;
+	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+}
+
+.form_inner h2 {
+	text-align: center;
+	margin-top: 70px;
+}
+.form_inner input{
+	width: 330px;
+	color: rgba(67, 80, 91, 1);
+	padding: 10px 0px 10px 10px;
+	font-size: 16px;
+	margin-top: 10px;
+	border-radius: 8px;
+	border: 1px solid rgba(208, 213, 221, 1);
+	margin-left: 20px;
+}
+
+.form_inner label {
+	display: block;
+	margin-top: 15px;
+	margin-left: 20px;
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0%;
+}
+
+.register_now {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	background-color: rgba(38, 153, 251, 1);
+	border: none;
+	border-radius: 8px;
+	padding: 10px 18px;
+	color: white;
+	width: 330px;
+	height: 44px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.banner_2 {
+	display: flex;
+	max-width: 1170px;
+	margin: auto;
+	box-shadow: 0px 0px 3px 1px #CCC;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.content_b2 {
+	flex-basis: 19%;
+	padding: 35px 35px;
+}
+.content_b2 h2 {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(38, 153, 251, 1);
+}
+
+.content_b2 p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: rgba(67, 80, 91, 1);
+	margin-top: 8px;
+}
+
+.banner_3 {
+	max-width: 1170px;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.banner_3 h3 {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+}
+
+.banner_3 p{
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	margin-top: 15px;
+}
+.course_content {
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	margin-top: 30px;
+}
+.course_box {
+	flex-basis: 30%;
+	display: flex;
+	padding: 15px 15px;
+	margin: 10px;
+	box-shadow: 0px 4px 20px -2px rgba(0, 47, 88, 0.08);
+	border-radius: 8px;
+}
+.course_box h4 {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 26px;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	margin-left: 15px;
+}
+
+.course_box p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 0%;
+	color: rgba(67, 80, 91, 1);
+	margin-left: 15px;
+}
+
+.book_free_class_btn {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0%;
+	color: white;
+	background-color: rgba(38, 153, 251, 1);
+	padding: 16px 48px;
+	border-radius: 8px;
+	border: none;
+	display: block;
+	margin: 30px auto 0;
+}
+
+.banner_4 {
+	max-width: 1170px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.banner_4 h2 {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 55px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgba(10, 33, 52, 1);
+	padding: 0px 350px;
+}
+
+.banner_4 p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0%;
+	color:  rgba(10, 33, 52, 1);
+	margin-top: 15px;
+	text-align: center;
+}
+
+.banner_4_sections {
+	max-width: 100%;
+	display: flex;
+	margin-top: 30px;
+}
+
+.banner_4_box {
+	flex-basis: 22%;
+	border: 1px solid rgba(242, 244, 247, 1);
+	box-shadow: 0px 4px 20px -2px rgba(0, 47, 88, 0.08);
+	border-radius: 8px;
+	margin: 15px;
+}
+
+.banner_4_box img {
+	border: 1px solid rgba(242, 244, 247, 1);
+	border-radius: 8px;
+	padding: 10px;
+	margin: 25px 25px;
+	box-shadow: 0px 0px 0px 4px rgba(242, 244, 247, 1);
+	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+	box-shadow: 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+}
+
+.banner_4_box h4 {
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: 2%;
+	color: rgba(10, 33, 52, 1);
+	margin: 0px 25px;
+}
+
+.banner_4_box p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	text-align: left;
+	margin: 15px 25px 25px 25px;
+}
+
+.banner_5 {
+	max-width: 1170px;
+	background-color: rgba(247, 250, 255, 1);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.banner_5left {
+	flex-basis: 45%;
+}
+
+.banner_5left h2 {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	margin-top: 80px;
+}
+
+.banner_5left p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	margin-top: 10px;
+}
+
+.banner_5_row {
+	margin-top: 15px;
+}
+
+.banner_5_box {
+	display: flex;
+	background-color: white;
+	border: 1px solid rgba(242, 244, 247, 1);
+	box-shadow: 0px 4px 20px -2px rgba(0, 47, 88, 0.08);
+	padding: 20px;
+	border-radius: 8px;
+	margin: 20px 20px 20px 0px;
+}
+
+.banner_5_box img {
+	margin-right: 15px;
+	width: 74px;
+	height: 74px;
+}
+.banner_5_box h3{
+	font-family: Inter;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-transform: capitalize;
+	color: rgba(10, 33, 52, 1);
+}
+
+.banner_5_box p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 2px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+}
+
+
+.banner_5left button {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0%;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(38, 153, 251, 1);
+	padding: 16px 48px;
+	border-radius: 8px;
+	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+	box-shadow: 0px 4px 14px 2px rgba(38, 153, 251, 0.38);
+	border: none;
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+.banner_5right img {
+	width: 100%;
+}
+
+.banner_6 {
+	max-width: 1170px;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}
+.banner_6 h2 {
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 54px;
+	letter-spacing: 0%;
+	text-align: center;
+	color: rgba(10, 33, 52, 1);
+}
+
+.banner_6 p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	margin-top: 10px;
+}
+
+.banner_6_heading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.banner_6_heading div{
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(67, 80, 91, 1);
+	padding: 35px;
+}
+
+.banner_6_heading>div>span {
+	border-bottom: 3px solid rgba(38, 153, 251, 1);
+	background-color: rgba(242, 244, 247, 1);
+	padding: 15px 25px;
+}
+
+.banner_6_content {
+	max-width: 100%;
+	border: 1px solid rgba(242, 244, 247, 1);
+	box-shadow: 0px 4px 20px -2px rgba(0, 47, 88, 0.08);
+	border-radius: 8px;
+	display: flex;
+}
+
+.banner_6_content_left {
+	flex-basis: 48%;
+	text-align: left;
+	padding: 35px 25px;
+}
+
+.banner_6_content_left ul li {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	padding: 15px;
+}
+
+.banner_6_content_right {
+	flex-basis: 48%;
+	text-align: left;
+	padding: 35px 25px;
+}
+
+.banner_6_content_right ul li {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: rgba(10, 33, 52, 1);
+	padding: 15px;
+}
+
+.banner_6 button {
+	margin-top: 40px;
+	font-family: Inter;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0%;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(38, 153, 251, 1);
+	padding: 16px 48px;
+	border: 1px solid rgba(10, 206, 254, 1);
+	border-radius: 8px;
+	box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+	box-shadow: 0px 4px 14px 2px rgba(38, 153, 251, 0.38);	
+}

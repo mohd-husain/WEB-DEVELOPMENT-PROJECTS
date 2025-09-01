@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .main {
+            width: 100%;
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            padding: 30px;
+            flex-basis: 23%;
+            height: 300px;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+        }
+
+        .box3 img {
+            object-fit: contain;
+        }
+
+        .box1:hover img {
+            object-fit: cover;
+        }
+
+        .box2:hover img {
+            object-fit: contain;
+        }
+
+        .box3:hover img {
+            object-position: left top;
+        }
+
+        .box4:hover img {
+            filter: blur(3px);
+        }
+
+        .box5:hover img {
+            filter: brightness(1.3);
+        }
+
+        .box6:hover img {
+            filter: contrast(2);
+        }
+
+        .box7:hover img {
+            filter: drop-shadow(0px 0px 20px grey);
+        }
+
+        .box8:hover img {
+            filter: grayscale(0.8);
+        }
+
+        .box9:hover img {
+            filter: saturate(1.5);
+        }
+        .box10:hover img {
+            image-rendering: pixelated;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1 box"><img src="1.jpg" alt="" title="Image">
+            <h2>object-fit: cover;</h2>
+        </div>
+        <div class="box2 box"><img src="1.jpg" alt="" title="Image">
+            <h2>object-fit: contain;</h2>
+        </div>
+        <div class="box3 box"><img src="1.jpg" alt="" title="Image">
+            <h2>object-position: top left;</h2>
+        </div>
+        <div class="box4 box"><img src="1.jpg" alt="" title="Image">
+            <h2>filter: blue ();</h2>
+        </div>
+        <div class="box5 box"><img src="1.jpg" alt="" title="Image">
+            <h2>filter: brightness();</h2>
+        </div>
+        <div class="box6 box"><img src="1.jpg" alt="" title="Image">
+            <h2>filter: contrast();</h2>
+        </div>
+        <div class="box7 box"><img src="1.jpg" alt="" title="Image">
+            <h2>filter: drop-shadown();</h2>
+        </div>
+        <div class="box8 box"><img src="1.jpg" alt="" title="Image">
+            <h2>filter: greyscale();</h2>
+        </div>
+        <div class="box9 box"><img src="1.jpg" alt="" title="Image"><h2>filter: stature();</h2></div>
+        <div class="box10 box"><img src="1.jpg" alt="" title="Image"><h2>image-rendering-pixelated;</h2></div>
+    </div>
+</body>
+
+</html>

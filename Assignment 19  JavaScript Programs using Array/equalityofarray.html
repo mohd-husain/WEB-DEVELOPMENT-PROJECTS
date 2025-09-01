@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Equality of Array</title>
+    </head>
+    <body>
+        
+
+        <script>
+            var a = [1,2,3];
+            var b = [1,2,3];
+            var output = true;
+
+            if(a.length !== b.length){
+                output = false;
+            } else {
+                for (i = 0; i < a.length; i++){
+                    if(a[i] !== b[i] ){
+                        output = false
+                    }
+                }
+            }
+
+            if (output){
+                console.log('Arrays are euqal')
+            } else {
+                console.log('Arrays are not equal')
+            }
+        </script>
+    </body>
+</html>

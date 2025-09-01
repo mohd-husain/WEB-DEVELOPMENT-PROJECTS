@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smallest Element</title>
+</head>
+
+<body>
+    <script>
+        var number = [3, 7, 12, 2, 5, 9, 32];
+        var smallest = number[0];
+
+        for (var v of number) {
+            if(v < smallest){
+                smallest = v;
+            }
+            console.log(v);
+        }
+
+        console.log('Smallest Value ' + smallest)
+    </script>
+</body>
+
+</html>

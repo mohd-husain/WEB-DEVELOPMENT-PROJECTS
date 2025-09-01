@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Effect</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        @keyframes circleMove {
+            from {
+                transform: translate(0);
+            }
+
+            to {
+                transform: translateY(-1000px);
+            }
+        }
+
+        body {
+            background-color: #2C87C3;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .circle1 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 30px 2px white;
+            position: absolute;
+            bottom: -200px;
+            left: 30px;
+            animation: circleMove 6s 0s linear infinite;
+        }
+
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 30px 2px white;
+            position: absolute;
+            bottom: -100px;
+            left: 200px;
+            animation: circleMove 2s 0s linear infinite;
+        }
+
+        .circle3 {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 30px 2px white;
+            position: absolute;
+            bottom: -150px;
+            left: 450px;
+            animation: circleMove 10s 4.5s linear infinite;
+        }
+
+        .circle4 {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 30px 2px white;
+            position: absolute;
+            bottom: -250px;
+            left: 700px;
+            animation: circleMove 14s 2.5s linear infinite;
+        }
+
+        .circle5 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 30px 2px white;
+            position: absolute;
+            bottom: -200px;
+            left: 1100px;
+            animation: circleMove 9s 1s linear infinite;
+        }
+
+        .circle6 {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: inset 0px 0px 30px 2px white;
+            position: absolute;
+            bottom: -70px;
+            left: 1450px;
+            animation: circleMove 4s 1.75s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Windot Object Functions</title>
+    </head>
+    <body>
+        <button id="setTime">Set Time Out</button>
+        <button id="clearTime">Clear Time Out</button>
+
+        <button id="setInterval">Set Interval</button>
+        <button id="clearInterval">Clear Interval</button>
+
+    </body>
+    <script>
+        function popup(){
+            alert();
+        }
+
+        var input = '';
+
+        document.getElementById('setTime').addEventListener('click', ()=>{
+            input = window.setTimeout(popup, 2000) //i can write like setTimeout(popup, 2000);
+        })
+
+        document.getElementById('clearTime').addEventListener('click', ()=>{
+            window.clearTimeout(input);
+        })
+
+        var counter = 0;
+
+        document.getElementById('setInterval').addEventListener('click', ()=>{
+            window.clearTimeout(input);
+        })
+
+        document.getElementById('clearInterval').addEventListener('click', ()=>{
+            window.clearTimeout(input);
+        })
+
+        // window.setTimeout(popup, 3000)
+    </script>
+</html>

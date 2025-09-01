@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Object</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        // var userInfo = ["Hussain", "gateway5828@gmail.com", "8429154190"]
+        // console.log(userInfo[0])
+
+        // var userInfo = {
+        //     email : 'gateway5828@gmail.com',
+        //     name : 'Hussain',
+        //     mobile_no : "8429154190",
+        // }
+        // console.log(userInfo['name']);
+
+        var userInfo = [
+            {
+                name : 'Hussain',
+                email : 'hussain@gmail.com',
+            },
+            {
+                name : 'Maula Hussain',
+                email : 'maulahussain@gmail.com',
+            },
+            {
+                name : 'khali',
+                gmail : 'khali@gmail.com',
+            },
+        ]
+
+        
+        function userFetch(){
+            for(var index in userInfo){
+                console.log(userInfo[index].name);
+
+                document.write(userInfo[index].name+'<br>');
+            }
+        }
+        userFetch();
+    
+    </script>
+</html>

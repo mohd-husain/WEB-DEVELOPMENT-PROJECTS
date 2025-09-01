@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>After & Before</title>
+	</head>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.main{
+			width: 700px;
+			margin: 50px auto;
+			border: 0.1px solid red;
+			font-size: 30px;
+			padding: 15px 0px;
+			text-align: center;
+		}
+		/*.heading{
+			color: red;
+			font-size: 40px;
+			font-style: italic;
+		}*/
+		.main::after{
+			content: 'WsCube Tech'; /*Content Likhna Compulsary Hai*/
+			color: red;
+			font-size: 40px;
+			font-style: italic;
+		}
+		.main::before{
+			content: 'Hello Everyone !'; /*Content Likhna Compulsary Hai*/
+			color: blueviolet;
+			font-size: 40px;
+			font-style: italic;
+		}
+	</style>
+	<body>
+		<div class="main">
+			<!-- Welcome to <span class="heading"> WsCube Tech </span> -->
+			Welcome to
+		</div>
+	</body>
+</html>

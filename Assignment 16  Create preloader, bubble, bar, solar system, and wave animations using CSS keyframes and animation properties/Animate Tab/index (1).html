@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Tab</title>
+    <style>
+        body {
+            background-color: #070721;
+        }
+
+        @keyframes sizechange {
+            0% {
+                transform: scaleY(1);
+            }
+
+            50% {
+                transform: scaleY(1.5);
+            }
+
+            100% {
+                transform: scaleY(1.0);
+            }
+        }
+
+        .main {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .row1 {
+            width: 10px;
+            height: 180px;
+            background-color: #FFA500;
+            animation: sizechange;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .row2 {
+            width: 10px;
+            height: 180px;
+            background-color: #ADD8E6;
+            animation: sizechange;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .row3 {
+            width: 10px;
+            height: 180px;
+            background-color: yellow;
+            animation: sizechange;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .row4 {
+            width: 10px;
+            height: 180px;
+            background-color: green;
+            animation: sizechange;
+            animation-duration: 3.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row1"></div>
+        <div class="row2"></div>
+        <div class="row3"></div>
+        <div class="row4"></div>
+    </div>
+</body>
+
+</html>

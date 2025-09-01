@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest Element</title>
+</head>
+
+<body>
+    <script>
+        var number = [3, 7, 12, 5, 9, 32];
+        var largest = number[0];
+
+        for (var v of number) {//for of loop hamesha array ke andar ki value return karta hai
+            if(v > largest){
+                largest = v;
+            }
+            console.log(v);
+        }
+
+        console.log('Largest Value ' + largest)
+    </script>
+</body>
+
+</html>

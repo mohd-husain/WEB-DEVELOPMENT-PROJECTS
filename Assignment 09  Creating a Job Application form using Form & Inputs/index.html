@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-09</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 45%;
+            /* border: 2px solid black; */
+            margin: auto;
+        }
+
+        .row1 {
+            display: flex;
+        }
+
+        .row2 {
+            display: flex;
+        }
+
+        .row3 {
+            display: flex;
+        }
+
+        .f1 {
+            width: 100%;
+            padding: 15px 15px;
+        }
+
+        .f2 {
+            width: 100%;
+            padding: 15px 15px;
+        }
+
+        .input1 {
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend style="margin-left: 20px;">JOB APPLICATION FORM</legend>
+        <div class="row1">
+            <div class="f1">
+                <label for="">FIRST NAME</label><br>
+                <input type="text" n required class="input1" placeholder="&nbsp;ENTER YOUR FIRST NAME">
+            </div>
+            <div class="f2">
+                <label for="">LAST NAME</label><br>
+                <input type="text" required class="input1" placeholder="ENTER YOUR LAST NAME">
+            </div>
+        </div>
+        <div class="row2">
+            <div class="f1">
+                <label for="">EMAIL</label><br>
+                <input type="email" required class="input1" placeholder="&nbsp;xyz@gmail.com">
+            </div>
+            <div class="f2">
+                <label for="">MOBILE NUMBER</label><br>
+                <input type="tel" required pattern="[0-9, +-]{10}" minlength="14" maxlength="14"  name="mobile" value="+91-" class="input1" placeholder="ENTER YOUR LAST NAME">
+            </div>
+        </div>
+        <div class="row3">
+            <div class="f1">
+                <label for="">DOB</label><br>
+                <input type="date" required class="input1" placeholder="&nbsp;xyz@gmail.com">
+            </div>
+            <div class="f2">
+                <label for="">STATE</label><br>
+                <Select style="width: 100%; height: 35px; border: 2px solid black; border-radius: 5px;">
+                    <option>SELECT</option>
+                    <option>JAMMU KASHMIR</option>
+                    <option>PUNJAB</option>
+                    <option>HARYANA</option>
+                    <option>DELHI</option>
+                    <option>UTTAR PRADESH</option>
+                    <option>UTTARAKHAN</option>
+                    <option>MADHYA PRADESH</option>
+                </Select>
+            </div>
+        </div>
+        <div class="f1">
+            <label for="">GENDER</label><br>
+            <div
+                style="width: 100%; height: 35px; border-radius: 5px; border: 2px solid black; padding: 10px 15px; word-spacing: 30px;">
+                <input required type="radio" name="gender" class="">MALE
+                <input type="radio" name="gender" class="">FEMALE
+                <input type="radio" name="gender" class="">OTHER
+            </div>
+        </div>
+        <div class="f1">
+            <label for="">ADDRESS</label><br>
+            <div >
+                <textarea required placeholder="ENTER YOUR ADDRESS" style="width: 100%; height: 80px; border-radius: 5px; border: 2px solid black; padding: 10px 15px; word-spacing: 5px; resize: none;"></textarea>
+            </div>
+        </div>
+        <div class="f1">
+            <label for="" class="padding-bottom:">QUALIFICATION</label><br>
+            <div
+                style="width: 100%; height: 40px; border-radius: 5px; border: 2px solid black; padding: 10px 15px;">
+                <input type="radio" name="" >10th &nbsp;&nbsp;
+                <input type="radio" name="" >12th &nbsp;&nbsp;
+                <input type="radio" name="" >UNDER GRADUATE &nbsp;&nbsp;
+                <input type="radio" name="" >POST GRADUATE &nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="f1">
+            <label for="" class="padding-bottom:">UPLOAD IMAGE</label><br>
+            <div
+                style="width: 100%; height: 50px; border-radius: 5px; border: 2px solid black; padding: 10px 15px;">
+                <input type="file" name="" class="">
+            </div>
+        </div>
+        <div class="btn" style="width: 100%; text-align: center;">
+            <button style="width: 15%; height: 40px; color: white; background-color: #9B59B6; border: none; border-radius: 5px;" type="submit">SAVE</button>
+            <button style="width: 15%; height: 40px; color: white; background-color: #9B59B6; border: none; border-radius: 5px;" type="reset">RESET</button>
+         </div>
+         </fieldset>
+         </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Double Image Transform</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.items{
+			width: 300px;
+			height: 300px;
+			margin: 30px auto;
+			position: relative;
+		}
+		.img1 {
+			width: 100%;
+			height: 100%;
+			transition: 1s;
+		}
+		.img2 {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: scale(0,0);
+			transition: 1s;
+			transform-origin: top; /*Isse Transform Wali Image Top Se Start Hogi*/
+		}
+		.items:hover .img1{
+			transform: scale(0);
+		}
+		.items:hover .img2{
+			transform: scale(1);
+		}
+	</style>
+</head>
+<body>
+	<div class="items">
+		<img src="https://images.all-free-download.com/images/thumbjpg/wild_animal_picture_relaxing_tiger_6934816.jpg" class="img1">
+		<img src="https://plus.unsplash.com/premium_photo-1664298004972-af1ad3b52321?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnJvd24lMjBiZWFyfGVufDB8fDB8fHww" class="img2">
+	</div>
+</body>
+</html>

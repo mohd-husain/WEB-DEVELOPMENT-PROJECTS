@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Traffic Light Simulator</title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        var light = prompt('Enter Traffic Signal (Red, Yellow, Green)');
+        if (light.toLowerCase() == 'red'){
+            document.write("You Should Wait It's Red Signal")
+        } else if (light.toLowerCase() == 'yellow'){
+            document.write("Now Signal is about to open it's yellow light")
+        } else if (light.toLowerCase() == 'green'){
+            document.write("Time to go now it's green light")
+        } else {
+            document.write('please enter only signal light color (red, yellow, green)')
+        }
+    </script>
+</html>

@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.row {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    gap: 15px;
+}
+
+.content {
+    border: 1px solid black;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.output {
+    margin-top: 50px;
+    border: 1px solid grey;
+    border-radius: 15px;
+}
+
+

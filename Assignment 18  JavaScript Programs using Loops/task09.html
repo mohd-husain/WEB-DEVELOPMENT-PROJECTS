@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // let num = parseInt(prompt('Enter the Number'));
+            // let primeNumber = 0;
+
+            // if(num % 2 ==0){
+            //     document.write(num + " is Not a Prime Number")
+            // } else {
+            //     document.write(num + " is a Prime Number")
+            // }
+
+            let num = parseInt(prompt('Enter the Number'));
+            let primeNumber = true;
+
+            if (num < 2){
+                primeNumber = false
+            } else {
+                for(i=2; i<num; i++){
+                    if(num % i==0){
+                        primeNumber = false
+                    }
+                }
+            }
+
+            if (primeNumber){
+                document.write(num + "is Prime Number")
+            } else {
+                document.write(num + " is not a Prime Number")
+            }
+        </script>
+    </body>
+</html>

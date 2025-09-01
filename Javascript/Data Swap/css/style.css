@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: lightcyan;
+}
+
+.main {
+    width: 1170px;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid black;
+}
+
+.mainContentOuter {
+    display: flex;
+}
+
+.Content {
+    background-color: yellow;
+    margin: 40px;
+    padding: 40px;
+    flex-basis: 40%;
+}
+
+.main button {
+    padding: 10px 15px;
+    display: table;
+    margin: auto;
+    margin-top: 30px;
+}

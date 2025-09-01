@@ -1,0 +1,36 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #F5F5F5;
+}
+.container{
+	width: 1140px;
+	text-align: center;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.box{
+	border-radius: 15px;
+	background-color: white;
+	flex-basis: 30%; /*It works as same as width: 30%*/
+	padding: 1.5%;
+	margin: 15px;
+	margin-top: 25px;
+}
+p {
+	padding-top: 10px;
+}
+h1 {
+	margin-top: 10px;
+	text-align: center;
+}
+
+img {
+	fill: blue;
+	stroke: green;
+}

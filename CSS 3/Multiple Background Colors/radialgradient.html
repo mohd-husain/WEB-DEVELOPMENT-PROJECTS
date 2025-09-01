@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial Gradient</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 800px;
+            height: 300px;
+            border: 0.1px solid red;
+            margin: 50px auto;
+            background-image: -webkit-radial-gradient(ellipse, red, blue, green, yellow, cyan, pink); /*Default Shape is Ellipse*/
+            background-image: radial-gradient(circle at 50% 20%, red, blue, green, yellow, cyan, pink);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
